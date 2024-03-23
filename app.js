@@ -22,7 +22,7 @@ function logMethodAndUrl(req, res, next) {
     console.log(`Request Method: ${req.method}, URL: ${req.url}`);
     next();
    }
-app.use(logMethodAndUrl);
+app.use(logMethodAndUrl)
 
 // Error handling middleware
 app.use((err, req, res, next) => {
